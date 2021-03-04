@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capas</title>
+
+</head>
+
+<style>
+a.boton01 {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+    a.boton01:hover {
+    background-color: orange;
+    color: black;
+    }
+#capa {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    background-color: aquamarine;
+    z-index: 10;
+}
+
+#capa1 {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+    width: 300px;
+    background-color: rgb(99, 105, 103);
+    z-index: 5;
+
+    }
+    #capa1:hover{
+    z-index: 11;
+    }
+
+
+#yorelativo{ 
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+span.efecto{
+color:rebeccapurple;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: large;
+}
+
+#tabla{
+    margin-top: 400px ;
+}
+
+
+
+#capaf1 {
+    position: relative;
+    z-index: 1;
+}
+#capaf2 {
+    position: relative;
+    z-index: 2;
+}
+#capaf3 {
+    position: relative;
+    z-index: 3;
+}
+#capaf4 {
+    position: relative;
+    z-index: 4;
+}
+
+#primero {
+    color: blue;
+
+}
+#primero:hover {
+
+    color: black;
+    background-color:chartreuse;
+}
+ td:hover {
+     color: black;
+     background-color: cornflowerblue;
+ }
+ tr:hover {
+     color: black;
+     background-color: rgb(231, 228, 27);
+ }
+
+.personas {
+    border-radius: 180px;
+    height: 75px;
+    border: 5px solid white;
+    margin: 8px;
+    padding: 5px;
+}
+.personas:hover{
+    border: 5px solid rgb(250, 151, 3);
+    padding: 5px;
+    height: 100px;
+}
+
+/*ESTO TAMBIEN ES UN COMENTARIO*/
+
+</style>
+
+<body>
+<br>
+<!--IcoFX Portable PARA LOS ICONOS-->
+
+    <a class="boton01" href="http://www.visitacabaneros.es/visitaguiada.php">Cabañeros</a>
+
+    <a id="boton02" href="https://www.google.com/webhp?hl=es&sa=X&ved=0ahUKEwjrlM3MnJbvAhUoTxUIHUpODwQQPAgI">Google busqueda</a>
+    
+    <a class="boton01" href="https://www.google.es/imghp?hl=es&tab=ri&ogbl">Google imagenes</a>
+
+    <div id="capa">
+        <h1>estoy dentro de la capa</h1>
+        <p>Sigo dentro de la capa</p>
+    </div>
+
+    <div id="capa1">
+        <h1>estoy dentro de la capa</h1>
+        <p>Sigo dentro de la capa</p>
+    </div>
+
+     <p>El verdadero mal de la vejez no es el <span class="efecto">debilitamiento del cuerpo</span> 
+        sino la <span class="efecto"> indiferencia del alma</span></p>
+
+
+ <table id="tabla" border="1">
+<tr>
+    <th colspan="5">Primera tabla</th>    
+</tr>
+<tr>
+    <td >Horario</td>
+    <td colspan="2">Nombre</td>
+    <td colspan="2">Asistente</td>
+</tr>
+<tr>
+    <td rowspan="2"id="primero" >PRIMERO</td>
+    <td>SEGUNDO</td>
+    <td>TERCERO</td>
+    <td>CUARTO</td>
+    <td>QUINTO</td>
+</tr>
+<tr>
+   <!--<td>PRIMERO</td>}-->
+    <td>SEGUNDO</td>
+    <td>TERCERO</td>
+    <td>CUARTO</td>
+    <td>QUINTO</td>
+</tr>
+<tr>
+    <td>PRIMERO</td>
+     <td>SEGUNDO</td>
+     <td>TERCERO</td>
+     <td>CUARTO</td>
+     <td>QUINTO</td>
+ </tr>
+ <tr>
+    <td>PRIMERO</td>
+     <td>SEGUNDO</td>
+     <td>TERCERO</td>
+     <td>CUARTO</td>
+     <td>QUINTO</td>
+ </tr>
+
+
+ </table>
+
+ <br><br>
+
+ <a href="https://www.google.es/imghp?hl=es&tab=ri&ogbl"><img src="1.jpg" alt="" class="personas"></a>
+ <img src="2.jpg" alt="" class="personas">
+ <img src="3.jpg" alt="" class="personas">
+ <img src="4.jpg" alt="" class="personas">
+ <img src="5.jpg" alt="" class="personas">
+ <img src="6.jpg" alt="" class="personas">
+ <img src="7.jpg" alt="" class="personas">
+ 
+    
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+--------------- ESTO ES UNA PRUEBA ---------------
+
+    <marquee behavior="alternate" direction="down" width= "700" height="700" style="border:solid" >
+        <marquee behavior="alternate" direction="">
+
+            <div id="capaf1"><img src="001.jpg" alt="" width="250px" height="250px"> </div>
+            
+            <div id="capaf2"><img src="002.png" alt="" width="250px" height="250px"></div>
+            
+            <div id="capaf3"><img src="003.jpg" alt="" width="250px" height="250px"></div>
+            
+            <div id="capaf4"><img src="004.jpg" alt="" width="250px" height="250px"></div>
+        </marquee>
+
+
+
+</body>
+</html>
