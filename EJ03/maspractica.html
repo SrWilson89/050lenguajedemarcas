@@ -22,20 +22,52 @@
     height: 75px;
     
 }
+/* ESTO ES PARA QUE LA TABLA TENGA FONDO BLANCO*/
+table {
+    background-color: white;
+}
 
+td:hover {
 
+color: white;
+background-color: black;
+font-size: large;
+
+}
+
+#capa1 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+#capa2 {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: auto;
+    z-index: 2;
+}
 
 </style>
 
-<body style="background-color: cornsilk;">
+<!--RECUERDA ESTO VALE PARA EL FONDO DE LA PAG WEB-->
 
-    <img src="cf.jpg" alt="" width=100% height=200px>
+<body   style= "background-image: url(cpd.jpg);">
 
-    <center><table id="tabla" border="1">
+    <div id="capa1">  
+
+        <img src="cf.jpg" alt="" width=100% height=500px>
+
+    </div>
+
+
+    <div id="capa2">
+
+    <table id="tabla" border="1">
         <tr>
-            <td> <center> Foto</center></td>    
-            <td><center>Nombre</center></td>
-            <td><center>Posicion</center></td>
+            <td> <center> <b> Foto </b></center></td>    
+            <td><center><b>Nombre</b></center></td>
+            <td><center><b>Posicion</b></center></td>
         </tr>
         <tr>
             <td><img src="1.jpg" alt="" class="personas"></td>    
@@ -70,8 +102,8 @@
         
         
         
-         </table>
-        </center>
+         </table>        
+    </div>
 
 
 
